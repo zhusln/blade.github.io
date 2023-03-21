@@ -15,17 +15,17 @@
         <form action="#">
           <div class="row">
             <i class="fas fa-user"></i>
-            <input type="text" placeholder="И-мэйл эсвэл утас" required>
+            <input type="email" id="email" placeholder="И-мэйл эсвэл утас" >
           </div>
           <div class="row">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Нууц үг" required>
+            <input type="password" id="password" placeholder="Нууц үг" >
           </div>
           <div class="pass"><a href="#">Нууц үгээ мартсан уу?</a></div>
           <div class="row button">
             <div>
             <!-- <a href="/index.html"><input  type="submit" value="Нэвтрэх"></a> -->
-            <a href="https://zhusln.github.io/blade.github.io/index.html" class="btn">Нэвтрэх</a>
+            <a href="https://zhusln.github.io/blade.github.io/index.html" onclick="gg()" id="bt" class="btn">Нэвтрэх</a>
             
           </div>
           <div class="signup-link"> Бүртгэл үүсгэх | <a href="#">Бүртгүүлэх</a></div>
@@ -34,4 +34,21 @@
     </div>
 
   </body>
+  <script>
+   function gg () {
+
+  let email = document.getElementById('email');
+  let password = document.getElementById('password');
+
+  if (email.value == 'huslen@gmail.com' && password.value == 'password') {
+    alert('You have successfully logged in!');
+    location.href="https://zhusln.github.io/blade.github.io/index.html"
+
+  } else {
+    location.href="#"
+    alert('Invalid email or password!');
+  }
+};
+
+  </script>
 </html>
