@@ -212,7 +212,6 @@ section{
     min-height: 100vh;
     display: flex;
      align-items: center; 
-    /* background:url(../images/bgg.png) no-repeat; */
     background-size: 600px;
     background-position: right;
 }
@@ -276,7 +275,7 @@ section{
     padding:5rem;
     text-align: center;
     border:var(--border);   
-        height: 20px;
+    height: 20px;
     width: 20px; 
 }
 
@@ -580,7 +579,7 @@ section{
 }
 
 .category .box {
-    width: 10%; /* Adjust width to make the box smaller */
+    width: 10%; 
     box-sizing: border-box;
     padding: 10px;
     border: 1px solid #eee;
