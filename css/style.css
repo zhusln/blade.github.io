@@ -15,6 +15,7 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: .2s linear;
+    width: 100%;
 }
 
 html{
@@ -60,7 +61,7 @@ section{
 
 .btn{
     margin-top: 1rem;
-    display: inline-block;
+    display: felx;
     padding:.9rem 3rem;
     font-size: 1.7rem;
     color:#fff;
@@ -83,16 +84,33 @@ section{
     top:0; left: 0; right: 0;
     z-index: 1000;
 }
+.bilguun{
+    width: 100px;
+}
 
 .header .logo img{
     height: 9rem;
+    width: 9rem;
+    /* width: 20%; */
+    /* height: 20%; */
 }
 
 .header .navbar a{
-    margin:0 1rem;
+    /* margin:0 1rem; */
     font-size: 1.6rem;
     color:#fff;
+    padding: 1rem;
+    width: auto;
+
     
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 10px;
+
 }
 
 .header .navbar a:hover{
@@ -204,8 +222,13 @@ section{
 }
 
 .header .cart-items-container .btn{
-    width: 100%;
+    width: 20%;
     text-align: center;
+
+}
+.cart-btn{
+    width: 10px;
+    height: 10px;
 }
 
 .home{
@@ -279,10 +302,14 @@ section{
     width: 20px; 
 }
 
-.menu .box-container .box img{
-    height: 20px;
-    width: 20px;
-    
+.menu .box .cart-item img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain; /* Prevents cropping */
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    background-color: #f9f9f9;
 }
 
 .menu .box-container .box h3{
@@ -312,6 +339,10 @@ section{
     color:var(--black);
 }
 
+.coffee-img img{
+    width: 10px;
+    height: 10px;
+}
 
 .products .box-container{
     display: grid;
@@ -326,13 +357,14 @@ section{
 }
 
 .products .box-container .box .icons a{
-    height: 5rem;
-    width: 5rem;
+    height: 10%;
+    width: 10%;
     line-height: 5rem;
     font-size: 2rem;
     border:var(--border);
     color:#fff;
     margin:.3rem;
+
 }
 
 .products .box-container .box .icons a:hover{
@@ -619,7 +651,10 @@ section{
 .category .cart-item .btn:hover {
     background-color: #555;
 }
-
+.icons{
+    width: 10%;
+    height: 10%;
+}
 @media (max-width: 768px) {
     .header {
         padding: 1.5rem;
@@ -680,7 +715,6 @@ section{
         font-size: 1.6rem;
     }
 
-    /* Adjust Menu Categories on Mobile */
     .menu .box-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -703,7 +737,6 @@ section{
     }
 }
 
-/* Make menu icon functional on mobile */
 @media (max-width: 768px) {
     #menu-btn:checked + .header .navbar {
         display: flex;
