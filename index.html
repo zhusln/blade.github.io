@@ -8,6 +8,8 @@
     <link rel="icon" href="./images/main_logo.png">
     <link rel="stylesheet" href="./images/main_logo.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
 </head>
 <body>
@@ -15,50 +17,44 @@
     <!-- header -->
      
 <header class="header">
-
-    <div class="logoo">
-    <a href="#" class="logo">
-        <img src="images/main_logo.png" alt="">
-    </a>
-    </div>
-
-    <nav class="navbar">
-        <a href="#ehlel">Эхлэл</a>
-        <a href="#bidnii">Бидний тухай</a>
-        <a href="#tses">Цэс</a>
-        <a href="#buteegdehuun">Бүтээгдэхүүн</a>
-        <a href="#eshlel">Эшлэл</a>
-        <a href="#holboo">Холбоо барих</a>
-        <a href="#medee">Мэдээ</a>
-    </nav>
-
-    <div class="search-form">
-        <input type="search" id="search-box" placeholder="search here...">
-        <label for="search-box" class="fas fa-search"></label>
-    </div>
-
-    <div></div>
-
-    <div>
-        <a href="login/login.html" class="btn">Нэвтрэх/Бүртгүүлэх</a>
-    </div>
-
-    <div class>
-
-    </div>
-
-    <div class="icons">
-        <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn">
-            <img src="./images/cake.png" alt="">
+        <div class="logoo">
+          <a href="#" class="logo">
+            <img src="images/main_logo.png" alt="">
+          </a>
         </div>
-        <div class="fas fa-bars" id="menu-btn"></div>
-    </div>
-    <!-- <div class="">
-        <img src="./images/cake.png" alt="" style="width: 10%; height: 10%; ">
-        
-    </div> -->
+      
+        <nav class="navbar">
+          <a href="#ehlel">Эхлэл</a> 
+          <a href="#bidnii">Бидний тухай</a> 
+          <a href="#tses">Цэс</a>
+          <a href="#eshlel">Эшлэл</a>
+          <a href="#medee">Мэдээ</a>
+        </nav>
+      
+        <!-- Search form -->
+        <div class="search-form">
+          <input type="search" id="search-box" placeholder="Хайх...">
+          <label for="search-box" class="fas fa-search"></label>
+        </div>
+      
+        <!-- Log in button -->
+        <div class="log">
+          <a href="login/login.html" class="btn">Нэвтрэх/Бүртгүүлэх</a>
+        </div>
+      
+        <!-- Icon buttons -->
+        <div class="icons">
+          <div class="fas fa-search" id="search-btn"></div>
+          <div class="fas fa-shopping-cart" id="cart-btn"></div>
+          <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+      
+        <!-- Cart area -->
+        <div class="cart-items-container" id="cart">
+          <p>Таны сагс хоосон байна.</p>
+        </div>
 </header>
+      
 
 
 <!-- home -->
@@ -98,403 +94,20 @@
 
 <!-- Menu -->
 
+
 <section class="menu" id="tses">
-            <h1 class="heading"> Бидний <span>Цэс</span> </h1>
-    <div class="coffee-img">  
-            <div class="category-title">
-                <h2>Кофе</h2>
-                <hr class="divider">
-            </div>
-            <div class="category coffees">
-                <!-- Coffees items here -->
-                         <!-- Coffees-->
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/espresso.jpg" alt="">
-                <div class="content">
-                    <h3>Эспрессо</h3>
-                    <div class="price">7000₮ </div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/americano.jpg" alt="">
-                <div class="content">
-                    <h3>Американо</h3>
-                    <div class="price">8000₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/latte.jpg" alt="">
-                <div class="content">
-                    <h3>Латте</h3>
-                    <div class="price">8500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/cappucino.jpg" alt="">
-                <div class="content">
-                    <h3>Каппучино</h3>
-                    <div class="price">8500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/macciato.jpg" alt="">
-                <div class="content">
-                    <h3>Карамель Маккиато</h3>
-                    <div class="price">10000₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/mocha.jpg" alt="">
-                <div class="content">
-                    <h3>Кафе Мокка</h3>
-                    <div class="price">10000₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-            </div>
-    </div>  
-        <!-- Cakes -->
-        <div class="category-title">
-            <h2>Торт</h2>
-            <hr class="divider">
-        </div>
-            <div class="category cakes">
-            <div class="box">
-                <div class="cart-item">
-                    <span class="fas fa-times"></span>
-                    <img src="images/cheese.jpg" alt="">
-                    <div class="content">
-                        <h3>Cheese Cake</h3>
-                        <div class="price">18500₮</div>
-                        <a href="#" class="btn">Сагсанд хийх</a>
-                    </div>
-                </div>
-            </div>
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/lava.png" alt="">
-                <div class="content">
-                    <h3>Chocolate Lava Cake</h3>
-                    <div class="price">17500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/red.png" alt="">
-                <div class="content">
-                    <h3>Red Velvet Cake</h3>
-                    <div class="price">21500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/lemon.png" alt="">
-                <div class="content">
-                    <h3>Lemon Cake</h3>
-                    <div class="price">10500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/vanilla.jpg" alt="">
-                <div class="content">
-                    <h3>Vanilla Cake</h3>
-                    <div class="price">8500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/blue.jpg" alt="">
-                <div class="content">
-                    <h3>Blueberry Cake</h3>
-                    <div class="price">9000₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
+    <h1 class="heading">Бидний <span>Цэс</span></h1>
+    <div class="menu-tabs">
+        <a href="coffee.html" class="btn">Кофе</a>
+        <a href="cakes.html" class="btn">Торт</a>
+        <a href="bakery.html" class="btn">Бэйкри</a>
+        <a href="donuts.html" class="btn">Донат</a>
+        <a href="icecream.html" class="btn">Мороз</a>
     </div>
-    <!-- Bakery -->
-    <div class="category-title">
-        <h2>Бэйкри</h2>
-        <hr class="divider">
-    </div>
-    <div class="category bakery">
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/choco.jpg" alt="">
-                <div class="content">
-                    <h3>Chocolate Chip Muffin</h3>
-                    <div class="price">10000₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/banana.jpg" alt="">
-                <div class="content">
-                    <h3>Banana Nut Muffin</h3>
-                    <div class="price">9000₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/lemonmuffin.jpg" alt="">
-                <div class="content">
-                    <h3>Lemon Poppyseed Muffin</h3>
-                    <div class="price">13000₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/pumpkin.jpg" alt="">
-                <div class="content">
-                    <h3>Pumpkin Spice Muffin</h3>
-                    <div class="price">12500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="category-title">
-            <h2>Мороз</h2>
-            <hr class="divider">
-        </div>       
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/gazed.jpg" alt="">
-                <div class="content">
-                    <h3>Glazed Donut</h3>
-                    <div class="price">8500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/chocodonut.jpg" alt="">
-                <div class="content">
-                    <h3>Chocolate Donut</h3>
-                    <div class="price">9500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/jelly.jpg" alt="">
-                <div class="content">
-                    <h3>Jelly-Filled Donut</h3>
-                    <div class="price">8500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/blu.jpg" alt="">
-                <div class="content">
-                    <h3>Blueberry Cake Donut</h3>
-                    <div class="price">9500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/cinnamon.jpg" alt="">
-                <div class="content">
-                    <h3>Cinnamon Sugar Donut</h3>
-                    <div class="price">9000₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-        </div>
-
-        <!-- ice cream -->
-        <div class="category-title">
-            <h2>Мороз</h2>
-            <hr class="divider">
-        </div>
-        <div class="category ice-cream">
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/vanice.jpg" alt="">
-                <div class="content">
-                    <h3>Vanilla</h3>
-                    <div class="price">5500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/chocoice.jpg" alt="">
-                <div class="content">
-                    <h3>Chocolate</h3>
-                    <div class="price">4500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/strawberryice.jpg" alt="">
-                <div class="content">
-                    <h3>Strawberry</h3>
-                    <div class="price">5500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/regchocoice.jpg" alt="">
-                <div class="content">
-                    <h3>Regular Chocolate Chip</h3>
-                    <div class="price">4500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/mintice.jpg" alt="">
-                <div class="content">
-                    <h3>Mint Chocolate Chip</h3>
-                    <div class="price">5000₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/cookieice.jpg" alt="">
-                <div class="content">
-                    <h3>Cookies and Cream</h3>
-                    <div class="price">4500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/rockyice.jpg" alt="">
-                <div class="content">
-                    <h3>Rocky Road</h3>
-                    <div class="price">4500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/coffeeice.jpg" alt="">
-                <div class="content">
-                    <h3>Coffee</h3>
-                    <div class="price">4500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="images/pistacho.jpg" alt="">
-                <div class="content">
-                    <h3>Pistachio</h3>
-                    <div class="price">4500₮</div>
-                    <a href="#" class="btn">Сагсанд хийх</a>
-                </div>
-            </div>
-        </div>    
- 
 </section>
 
 <!-- Quote  -->
+
 
 <section class="review" id="eshlel">
 
@@ -506,39 +119,18 @@
             <p>жижиг зүйл төгс төгөлдөр болгодог, гэхдээ төгс төгөлдөр гэдэг бол жижиг зүйл биш юм.</p>
             <img src="images/duujig.jpg" class="user" alt="">
             <h3>Ч. Түшиг</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
         </div>
 
         <div class="box">
             <p>Өнөөдрийн биеийн амрыг харсан хандлага маргаашийн нулимс болох магадлалтай.</p>
             <img src="images/bilguun.jpg" class="user" alt="">
             <h3>Л. Билгүүн</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
         </div>
         
         <div class="box">
             <p>Хэрэв чи унтвал мөрөөдлөө зүүдлэнэ. Харин унтахын оронд сурвал тэрхүү мөрөөдлөө амьдралд харэгжүүлж чадна.</p>
             <img src="images/temujin.jfif" class="user" alt="">
             <h3>Т. Тэмүжин</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div>
         </div>
 
     </div>
@@ -620,7 +212,33 @@
 
 </section>
 
-<script src="js/script.js"></script> 
-
+<script>
+    const searchBtn = document.querySelector('#search-btn');
+    const cartBtn = document.querySelector('#cart-btn');
+    const menuBtn = document.querySelector('#menu-btn');
+  
+    const searchForm = document.querySelector('.search-form');
+    const cart = document.querySelector('#cart');
+    const navbar = document.querySelector('.navbar');
+  
+    searchBtn.addEventListener('click', () => {
+      searchForm.classList.toggle('active');
+      cart.classList.remove('active');
+      navbar.classList.remove('active');
+    });
+  
+    cartBtn.addEventListener('click', () => {
+      cart.classList.toggle('active');
+      searchForm.classList.remove('active');
+      navbar.classList.remove('active');
+    });
+  
+    menuBtn.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+      searchForm.classList.remove('active');
+      cart.classList.remove('active');
+    });
+  </script>
+  
 </body>
 </html>
